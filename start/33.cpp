@@ -14,10 +14,15 @@ void tmp1(double a = 10.0, int b = 20) {
     cout << a + b << endl;
 }
 
+void tmp2(int) {
+    // 占位符
+}
+
 int main() {
     // 函数默认参数
     // tmp1();       // 默认为10,20
     tmp1(5);      // 只可以设定第一个
     tmp1(1, 30);  // 可以更改
     tmp1(1.0, 11);
+    // tmp2();  // error ! 必须传入参数
 }
