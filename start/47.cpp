@@ -6,6 +6,7 @@ class Manager {
 };
 
 class P1 {
+   public:
     void echo(Building1* b);
     //    public:
     //     void echo(Building1* b) { cout << b->id << endl; }
@@ -29,9 +30,9 @@ class Building1 {
     int age;
 };
 
-// void P1::echo(Building1* b) {
-//     cout << b->id << endl;
-// }
+void P1::echo(Building1* b) {
+    cout << b->id << endl;
+}
 
 // 全局函数做友元
 void visitBuilding(Building1* b) {
